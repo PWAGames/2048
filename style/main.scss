@@ -32,7 +32,7 @@ html, body {
 }
 
 body {
-  margin: 80px 0;
+  min-height: 100vh;
 }
 
 .heading {
@@ -483,11 +483,6 @@ hr {
 
   html, body {
     font-size: 15px;
-  }
-
-  body {
-    margin: 20px 0;
-    padding: 0 20px;
   }
 
   h1.title {
