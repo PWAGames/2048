@@ -36,7 +36,6 @@
 	],
 	"start_url": "index.html",
 	"display": "standalone",
-	"theme_color": "#ecc400",
 	"background_color": "#ecc400",
 	"orientation": "portrait"
 }
