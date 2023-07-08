@@ -1,10 +1,9 @@
-const cacheName = 'pwagame-2048-v1'
+const cacheName = 'pwagame-2048-v2'
 const contentToCache = [
-	'/',
+	'',
 	'index.html',
 	'favicon.ico',
 	'style/main.css',
-	'style/fonts/',
 	'style/fonts/clear-sans.css',
 	'style/fonts/ClearSans-Bold-webfont.eot',
 	'style/fonts/ClearSans-Bold-webfont.svg',
@@ -26,10 +25,14 @@ const contentToCache = [
 	'js/local_storage_manager.js',
 	'js/tile.js',
 	'meta/apple-touch-icon.png',
-	'meta/apple-touch-icon_96.png',
-	'meta/apple-touch-icon_144.png',
 	'meta/apple-touch-startup-image-640x920.png',
-	'meta/apple-touch-startup-image-640x1096.png'
+	'meta/apple-touch-startup-image-640x1096.png',
+	'meta/icon-outline-96.png',
+	'meta/icon-outline-128.png',
+	'meta/icon-outline-144.png',
+	'meta/icon-outline-192.png',
+	'meta/icon-outline-256.png',
+	'meta/icon-outline-512.png',
 ]
 
 // Installing Service Worker
@@ -38,7 +41,7 @@ self.addEventListener('install', (e) => {
 	e.waitUntil((async () => {
 		const cache = await caches.open(cacheName)
 		console.log('[Service Worker] Caching all: app shell and content')
-		await cache.addAll(contentToCache);
+		await cache.addAll(contentToCache)
 	})())
 })
 
