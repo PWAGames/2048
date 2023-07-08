@@ -1,4 +1,14 @@
 # 2048
+
+* Source: https://github.com/gabrielecirulli/2048
+
+**Reasons For Fork:**
+
+* [Official Github Pages Website](http://gabrielecirulli.github.io/2048/) contains Ads and is missing PWA metadata, but has updated with touch input. The touch input only works on the grid, so you can't swipe the bottom of the page where the instructions are.
+* [Opera PWA Fork](https://2048-opera-pwa.surge.sh) has PWA metadata and can work offline, but does not contain touch input.
+
+---
+
 A small clone of [1024](https://play.google.com/store/apps/details?id=com.veewo.a1024), based on [Saming's 2048](http://saming.fr/p/2048/) (also a clone).
 
 Made just for fun. [Play it here!](http://gabrielecirulli.github.io/2048/)
